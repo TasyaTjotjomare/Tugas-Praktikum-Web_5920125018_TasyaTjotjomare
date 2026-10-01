@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STI - Sistem & Teknologi Informasi</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+      body{font-family:"Segoe UI",Roboto,Arial,sans-serif;
+            background:#0b1b3a;
+            color:#fff;
+            min-height:100vh}
+    
+        header{
+            position:sticky;
+            top:0;z-index:10;
+            background:rgba(11,27,58,.92);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:14px 6%;
+            flex-wrap:wrap;gap:10px}
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:10px;
+            font: weight 700px;
+            font-size:1.3rem;
+            color:#fff;
+            text-decoration:none}
+
+        .logo span{
+            background:#22d3ee;
+            color:#0b1b3a;
+            padding:4px 10px;
+            border-radius:8px;
+            object-fit: contain;}
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:22px;
+            flex-wrap:wrap;
+            align-items:center}
+
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            font-size:.95rem;padding:6px 2px;
+            transition:color .2s}
+
+        nav a:hover{
+                    color:#22d3ee}
+
+      
+        .dropdown{
+                    position:relative}
+
+        .dropdown-menu{
+                        display:none;position:absolute;
+                        top:100%;
+                        left:0;
+                        min-width:190px;
+                        background:#fff;
+                        border-radius:10px;
+                        box-shadow:0 8px 24px rgba(0,0,0,.3);
+                        overflow:hidden}
+
+        .dropdown-menu a{
+                        display:block;
+                        padding:11px 16px;
+                        color:#0b1b3a}
+
+        .dropdown-menu a:hover{
+                                background:#22d3ee}
+
+        .dropdown:hover .dropdown-menu{
+                                    display:block}
+
+        .hero{
+            min-height:calc(100vh - 70px);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:40px 6%;
+            background:linear-gradient(135deg,rgba(11,27,58,.85),rgba(29,78,216,.75)),radial-gradient(circle at 80% 20%,#22d3ee,transparent 40%),#1d4ed8}
+       
+        .hero h1{
+              font-size:clamp(2rem,5vw,3.4rem);
+              line-height:1.2;margin-bottom:18px}
+
+        .hero h1 em{
+                  color:#22d3ee;font-style:normal}
+        .hero p{
+              max-width:620px;
+              margin:0 auto 30px;
+              font-size:1.1rem;
+              line-height:1.7;
+              opacity:.92}
+
+        .btn{
+              display:inline-block;
+              background:#22d3ee;
+              color:#0b1b3a;
+              font-weight:700;
+              padding:14px 38px;
+              border-radius:999px;
+              text-decoration:none;
+              font-size:1.05rem;
+              transition:transform .2s,box-shadow .2s}
+
+        .btn:hover{
+              transform:translateY(-3px);box-shadow:0 10px 24px rgba(34,211,238,.4)}
+</style>
+</head>
+<body>
+<header>
+  <a href="#" class="Logo"><img src="IMG-20251201-WA0023.jpg" 
+    style="width: 70px; height: 70px; object-fit: contain;"></a>
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li class="dropdown">
+        <a href="#">Program Studi ▾</a>
+        <div class="dropdown-menu">
+          <a href="#">Sistem Informasi</a>
+          <a href="#">Teknik Informatika</a>
+          <a href="#">Teknologi Informasi</a>
+        </div>
+      </li>
+      <li><a href="#">Fasilitas</a></li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero">
+  <div>
+      <h1>WELCOME TO STI UNIERA</h1>
+    <h1>Wujudkan Masa Depan di Dunia <em>Teknologi Informasi</em></h1>
+    <p>Bergabunglah bersama STI dan pelajari pemrograman, jaringan, data, serta pengembangan sistem bersama dosen berpengalaman dan fasilitas modern.</p>
+    <a href="#" class="btn">Daftar</a>
+  </div>
+</section>
+</body>
+</html>
